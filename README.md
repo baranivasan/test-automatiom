@@ -31,24 +31,12 @@ test-automation/
 - **Maven:** Version 3.6.0 or higher
 - **IDE:** IntelliJ IDEA, Eclipse, or any preferred Java IDE
 
-## Setup Instructions
-
-1. **Clone the Repository:**
+## To Trigger the Test Suite
 
    ```bash
    git clone https://github.com/baranivasan/test-automation.git
    cd test-automation
-   ```
-
-2. **Build the Project:**
-
-   ```bash
    mvn clean install
-   ```
-
-3. **Run Tests:**
-
-   ```bash
    mvn test
    ```
 
@@ -58,7 +46,10 @@ Test scenarios are written in Gherkin syntax and located in the `src/test/resour
 
 ## Reporting
 
-Upon test execution, reports are generated in the `target` directory. These reports provide insights into test outcomes and can be customized as needed.
+Extent Report will be generated post-execution
+
+![image](https://github.com/user-attachments/assets/51c32215-83ca-4bce-8e9b-79ba69fb9563)
+
 
 ## Continuous Integration
 
