@@ -41,6 +41,13 @@ public class Home  {
     }
 
 
+    public void clickLoginPage(){
+
+        lnk_Login.click();
+    }
+
+
+
 
 
 }
