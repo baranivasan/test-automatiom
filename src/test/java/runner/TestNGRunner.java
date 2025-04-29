@@ -16,12 +16,14 @@ import static pages.Baseclass.*;
 public class TestNGRunner {
     WebDriver webDriver;
 
+
     @BeforeTest
     public void LaunchBrowser() {
         webDriver = openBrowser("Chrome");
     }
 
-    @Test
+
+    @Test(priority = 1)
     public void verifyProduct() {
         Home home = new Home(webDriver);
         Login login = new Login(webDriver);
@@ -32,6 +34,14 @@ public class TestNGRunner {
         Products product = new Products(webDriver);
         product.clickViewProduct();
         product.verifyAvailabiliy("Availability: In Stock");
+    }
+
+    @Test(priority = 2)
+    public void addToCart() {
+        Products product = new Products(webDriver);
+
+        product.addtocart();
+        product.verifyaddtocart();
     }
 
 
