@@ -30,6 +30,9 @@ public class Login {
     @FindBy(xpath = "//a[contains(.,'Logged in as')]")
     public WebElement LoggedInUser;
 
+    @FindBy(xpath = "//p[contains(.,'incorrect')]")
+    public WebElement loginErrorMessage;
+
     public void Login(String emailAddress, String password){
         input_login_EmailAddress.sendKeys(emailAddress);
         input_login_Password.sendKeys(password);
@@ -40,6 +43,8 @@ public class Login {
         waitForElementTobeClickable(LoggedInUser);
         Assert.assertEquals(LoggedInUser.getText().trim(),"Logged in as "+ userName);
     }
+
+
 
 
 

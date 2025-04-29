@@ -39,7 +39,6 @@ public class TestNGRunner {
     @Test(priority = 2)
     public void addToCart() {
         Products product = new Products(webDriver);
-
         product.addtocart();
         product.verifyaddtocart();
     }

@@ -51,6 +51,7 @@ public class Products {
     }
 
 
+
     public void verifyAvailabiliy(String Availability) {
         String avialability = wbl_availability.getText().trim();
         Assert.assertEquals(avialability, Availability);
