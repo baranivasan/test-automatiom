@@ -10,7 +10,7 @@ This repository provides a structured framework for automating tests using Java 
 - **Behavior-Driven Development (BDD):** Utilize Gherkin syntax for writing human-readable test scenarios.
 - **Modular Architecture:** Organized codebase promoting reusability and maintainability.
 - **CI/CD Integration:** Compatible with tools like Jenkins and GitHub Actions for automated testing workflows.
-- **Comprehensive Reporting:** Generate detailed test reports for analysis.
+- **Comprehensive Reporting:** Extent Reporting
 
 ## Project Structure
 
