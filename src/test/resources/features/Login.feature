@@ -1,4 +1,4 @@
-@Login
+@AutomationExercise @Login
 
 Feature: Login into Automation Exercise
 

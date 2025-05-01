@@ -3,5 +3,6 @@
 /.idea/workspace.xml
 target/*
 compiler.xml
-
+Extent_Test_report.html
 .idea/*
+test-output/*

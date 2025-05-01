@@ -26,6 +26,9 @@ public class Home  {
     @FindBy(xpath = "//a[contains(.,'Products')]")
     public WebElement lnk_Products;
 
+    @FindBy(xpath = "//*[@href='/logout']")
+    public WebElement lnk_logOut;
+
 
     public void launchApplication(){
 
@@ -47,7 +50,7 @@ public class Home  {
     }
 
 
-
-
-
+    public void logOut() {
+        lnk_logOut.click();
+    }
 }
